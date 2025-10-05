@@ -76,7 +76,7 @@ class TransparencyApp:
         ttk.Label(default_section, text="默认透明度").pack(anchor="w")
         self.default_scale = tk.Scale(
             default_section,
-            from_=0,
+            from_=1,
             to=255,
             orient="horizontal",
             variable=self.default_alpha,

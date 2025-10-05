@@ -70,7 +70,7 @@ python -m unittest discover -s tests
 	python scripts\build_exe.py --clean-only
 	```
 
-GitHub Actions 工作流会在每次提交或 PR 上自动执行测试与打包，并将 `WindowTransparencyManager.exe` 作为构建工件上传，可在仓库的 Actions 页面下载。
+GitHub Actions 工作流会在每次提交或 PR 上自动执行测试与打包，并将 `WindowTransparencyManager.exe` 作为构建工件上传，可在仓库的 Actions 页面下载。若向仓库推送形如 `v*` 的标签（例如 `v1.0.0`），工作流还会自动创建 GitHub Release 并附带最新的可执行文件。
 
 ## 常见问题
 
